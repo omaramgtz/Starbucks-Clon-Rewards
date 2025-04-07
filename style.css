@@ -206,9 +206,10 @@ y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
 
 .main_der div{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     margin: 20px;
+    flex-direction: column;
+
 }
 
 .main_der p{
@@ -226,16 +227,20 @@ y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
 
 .main_der div img{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 150px;
+    width: 130px;
 }
 
 .main_der div p{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
     width: 150px;
+}
+
+.main_der div div{
+    display: inline-block;
+    text-align: justify;
+    flex-flow: row;
+
 }
