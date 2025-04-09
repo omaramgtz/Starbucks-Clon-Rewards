@@ -8,10 +8,11 @@
 }
 
 .header{
-    height: 100px;
     display: flex;
     justify-content: space-between;
     background-color: white;
+    height: 100%;
+    /*position: fixed;*/
 }
 
 .header_izq{
@@ -114,6 +115,8 @@
 }
 
 /*AQUI INICIA EL ESTILO DE MAIN*/
+
+/*Div izquierdo "Café gratis" parte fija*/
 main{
     background-color: rebeccapurple;
     width: 100%;
@@ -125,7 +128,13 @@ main .main_izq{
     height: 100%;
     width: 43%;
     background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%); /*con la pagina cssgradient.io hicimos el degradado*/
+    /*position: fixed;*/
+}
 
+.mano{
+    position: static;
+    bottom: 0px;
+    right: 0px;
 }
 
 .main_izq{
@@ -167,16 +176,6 @@ main .main_izq{
     cursor: pointer;
 }
 
-main .main_der{
-    height: 100vh;
-    width: 60%;
-    padding-top: 40px;
-    padding-left: 85px;
-    padding-right: 85px;
-    background-color: white;
-    borde
-}
-
 #main_button_izq{
     background-color: transparent;
     color: white;
@@ -202,10 +201,19 @@ main .main_der{
     background-color: white;
 }
 
-.main_der{
-    justify-content: center;
+/*Div derecho "beneficios y mas"*/
+
+main .main_der{
+    height: 100vh;
+    width: 60%;
+    padding-top: 40px;
+    padding-left: 85px;
+    padding-right: 85px;
+    background-color: white;
+    letter-spacing: 1px;
 }
-/*en la pagina de starbucks tenia "box-sizing: border-box;" nose por que 
+
+/*en la pagina de starbucks tenia "box-sizing: border-box;" no se por que 
 y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
 
 /*aqui edito texto de los cuadros de los beneficios*/
@@ -218,14 +226,11 @@ y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
 }
 
 .main_der p{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 5px;
+    font-size: 21px;
+    text-align: center  ;
 }
 
-#main_text_negrita{
+.negritas{
     font-weight: bold;
 }
 
