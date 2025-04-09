@@ -122,7 +122,7 @@ main{
 }
 
 main .main_izq{
-    height: 100vh;
+    height: 100%;
     width: 43%;
     background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%); /*con la pagina cssgradient.io hicimos el degradado*/
 
@@ -170,7 +170,11 @@ main .main_izq{
 main .main_der{
     height: 100vh;
     width: 60%;
+    padding-top: 40px;
+    padding-left: 85px;
+    padding-right: 85px;
     background-color: white;
+    borde
 }
 
 #main_button_izq{
@@ -204,21 +208,21 @@ main .main_der{
 /*en la pagina de starbucks tenia "box-sizing: border-box;" nose por que 
 y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
 
+/*aqui edito texto de los cuadros de los beneficios*/
 .main_der div{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
-    flex-direction: column;
-
+    margin: 1%;
+    letter-spacing: 1.5px;
+    font-weight: bold;
 }
 
 .main_der p{
     font-size: 20px;
-    font-weight:inherit;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 0, 30px;
+    text-align: center;
+    padding: 5px;
 }
 
 #main_text_negrita{
@@ -233,14 +237,14 @@ y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
 
 .main_der div p{
     display: flex;
-    flex-direction: column;
-    font-size: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    font-weight:lighter;
     width: 150px;
+    padding: 6px;
 }
 
 .main_der div div{
     display: inline-block;
-    text-align: justify;
-    flex-flow: row;
-
 }
