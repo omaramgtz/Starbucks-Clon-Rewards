@@ -12,7 +12,8 @@
     justify-content: space-between;
     background-color: white;
     height: 100%;
-    /*position: fixed;*/
+    position: sticky;
+    top: 0; /* Se pega en la parte superior cuando llegamos a esa posición */
 }
 
 .header_izq{
@@ -124,23 +125,23 @@ main{
     display: flex;
 }
 
-main .main_izq{
+.main_izq{
     height: 100%;
     width: 43%;
     background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%); /*con la pagina cssgradient.io hicimos el degradado*/
-    /*position: fixed;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    /*  position: fixed; INTENTAR PROMERO AGREGAR MAS BENEFICIOS PARA VER SI FUNCIONARÁ
+    left: 0;  Se pega en la parte superior cuando llegamos a esa posición*/
 }
 
 .mano{
     position: static;
     bottom: 0px;
     right: 0px;
-}
-
-.main_izq{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .main_izq img{
@@ -211,6 +212,8 @@ main .main_der{
     padding-right: 85px;
     background-color: white;
     letter-spacing: 1px;
+    position: fixed;
+    right: 0px;
 }
 
 /*en la pagina de starbucks tenia "box-sizing: border-box;" no se por que 
@@ -227,7 +230,7 @@ y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
 
 .main_der p{
     font-size: 21px;
-    text-align: center  ;
+    text-align: center;
 }
 
 .negritas{
