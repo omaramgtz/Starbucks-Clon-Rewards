@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'SODO Sans', sans-serif;
 }
 
 .header{
@@ -208,11 +208,11 @@ main .main_der{
     height: 100vh;
     width: 60%;
     padding-top: 40px;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 95px;
+    padding-right: 95px;
     background-color: white;
     letter-spacing: 1px;
-    position: fixed;
+    position: absolute; /*debería ser "static" pero se mueve todo y parece bandera*/
     right: 0px;
 }
 
@@ -229,7 +229,7 @@ y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
 }
 
 .main_der p{
-    font-size: 21px;
+    font-size: 21.92px;
     text-align: center;
 }
 
@@ -250,9 +250,85 @@ y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
     color: #212529;
     font-weight:lighter;
     width: 150px;
+}
+
+.main_der div div{
+}
+
+
+/*aqui edito texto de los cuadros de los beneficios GOLD*/
+.contenedor_beneficios_gold{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.contenedor_beneficios_gold p{
+    font-size: 1px;
+    text-align: center;
+}
+
+#estrellas{
+    font-size: 19px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.contenedor_beneficios_gold img{
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    padding-top: 20px;
+}
+
+.contenedor_beneficios_gold p{
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    font-weight:lighter;
+    width: 150px;
     padding: 6px;
 }
 
 .main_der div div{
     display: inline-block;
+}
+
+/*Inicia contenedor beige*/
+#contenedor_convierte_cafe{
+    background-color: rgb(241, 240, 235);
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    padding-bottom: 70px;
+}
+
+#contenedor_convierte_cafe p{
+    font-size: 15px;
+    width: 350px;
+    text-align: center;
+    padding: 0px;
+    font-weight: bold;
+
+}
+
+#contenedor_convierte_cafe #negritas_estrellas{
+    font-weight: bold;
+    font-size: 21px;
+    width: 380px;
+    letter-spacing: 0.25px;
+    
+}
+
+#contenedor_convierte_cafe img{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 5%;
 }
