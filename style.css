@@ -134,14 +134,16 @@ main{
     align-items: center;
     position: fixed;
     left: 0px;
-    /*  position: fixed; INTENTAR PROMERO AGREGAR MAS BENEFICIOS PARA VER SI FUNCIONARÁ
+    /*  position: fixed; INTENTAR PRIMERO AGREGAR MAS BENEFICIOS PARA VER SI FUNCIONARÁ
     left: 0;  Se pega en la parte superior cuando llegamos a esa posición*/
 }
 
 .mano{
-    position: static;
-    bottom: 0px;
+    position: absolute;
+    bottom: 100px;
     right: 0px;
+    width: 50%;
+    height: 50%;
 }
 
 .main_izq img{
