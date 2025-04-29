@@ -11,6 +11,8 @@
     display: flex;
     justify-content: space-between;
     background-color: white;
+    box-shadow:black;
+    box-shadow: 10px;
     width: 100%;
     position: fixed;
     top: 0; /* Se pega en la parte superior cuando llegamos a esa posición */
@@ -141,9 +143,10 @@ main{
 
 .mano{
     position: absolute;
-    bottom: 50px;
+    bottom: 6px;
     right: 0px;
     height: 220px;
+    z-index: -1;
 }
 
 .logo{
@@ -176,7 +179,8 @@ main{
     border: 1.5px solid white;
     font-weight: bold;
     margin: 25px;
-    right: 20px;
+    position: relative;
+    left: 30px;
     cursor: pointer;
 }
 
@@ -325,13 +329,155 @@ y esto yo se lo quité "display: flex;" y "flex-wrap: wrap;"*/
     font-weight: bold;
     font-size: 21px;
     width: 380px;
-    letter-spacing: 0.25px;
-    
+    letter-spacing: 0.6px;
 }
 
 #contenedor_convierte_cafe img{
     display: flex;
     justify-content: center;
-    width: 70%;
-    padding: 5%;
+    width:50%;
+    padding: 2%;
+}
+
+.estrella{
+    height: 25px;
+    position: relative;
+    right: 8px;
+    top: 4px;
+}
+
+.logosr{
+    height: 170px;
+    margin-left: 140px;
+}
+
+#footer{
+    display: flex;
+    position: absolute;
+    bottom: 1;
+}
+
+footer div ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+footer div a{
+    display: flex;
+    font-weight: lighter;
+}
+
+footer div logos-redes{
+    width: 500px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; 
+        padding-bottom: 30px;
+    }
+    .div2 { grid-area: 2 / 1 / 3 / 2; 
+        text-decoration-line: none ;
+    }
+    .div3 { grid-area: 3 / 1 / 8 / 2; 
+        padding-bottom: 300px;
+    }
+    .div4 { grid-area: 1 / 2 / 2 / 3; 
+        padding-bottom: 30px;
+        padding-left: 20px;
+        
+    }
+    .div5 { grid-area: 2 / 2 / 3 / 3; 
+        padding-bottom: 15px;
+        padding-left: 20px;
+    }
+    .div6 { grid-area: 3 / 2 / 4 / 3; 
+        padding-bottom: 15px;
+        padding-left: 20px;
+    }
+    .div7 { grid-area: 4 / 2 / 5 / 3; 
+        padding-left: 20px;
+        text-decoration: none;
+        
+    }
+    .div8 { grid-area: 5 / 2 / 8 / 3; }
+    .div9 { grid-area: 1 / 3 / 8 / 5; 
+        width: 800px;
+    }
+    
+footer a:link {
+    text-decoration: none;
+    color: gray;
+    }
+footer a:visited {
+    text-decoration: none;
+    color: gray;
+    }
+
+footer #redes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: flex-end;
+    position: relative;
+    right: 800px;
+    height: 1px;
+    width: 1px;}
+
+    
+.starbucks-footer {
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #000;
+    align-self: flex-end;
+    right: 400px;
+}
+
+.social-media {
+margin-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-links {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-links span {
+    color: #999;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #666;
 }
